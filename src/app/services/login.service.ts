@@ -13,7 +13,7 @@ export class LoginService {
   constructor(private http: HttpClient) { }
 
   login(body: IAuth): Observable<Token> {
-    return this.http.post<Token>(`${ERS_JPA_API_URL}/api/login`, body);
+    return this.http.post<Token>(`${ERS_JPA_API_URL}/auth/sign`, body);
   }
 
 }

@@ -14,6 +14,7 @@ import {FormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {appRoutes} from './routes';
 import {HttpClientModule} from '@angular/common/http';
+import { ListAilmentsComponent } from './components/list-ailments/list-ailments.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {HttpClientModule} from '@angular/common/http';
     NavbarComponent,
     LoginComponent,
     LogoutComponent,
-    ErrorComponent
+    ErrorComponent,
+    ListAilmentsComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
