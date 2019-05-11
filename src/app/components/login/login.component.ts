@@ -21,12 +21,12 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    this.loginService.login({ username: this.username, password: this.password, rememberMe: true })
+    this.loginService.login({ username: this.username, password: this.password })
       .subscribe(
         (token: Token) => {
           localStorage.setItem('authToken', token.idToken);
           const url = 'welcome/' + this.username;
-          this.router.navigate([url]);
+          this.router.navigate(['list-ailments']);
         },
         err => {
           console.log(err.status);

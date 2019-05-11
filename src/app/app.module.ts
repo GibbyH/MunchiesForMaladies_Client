@@ -14,6 +14,10 @@ import {FormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {appRoutes} from './routes';
 import {HttpClientModule} from '@angular/common/http';
+<<<<<<< HEAD
+=======
+import { ListAilmentsComponent } from './components/list-ailments/list-ailments.component';
+>>>>>>> 1855d7a4c8d99c346cb66d6d6486b18b2fd8f309
 
 @NgModule({
   declarations: [
@@ -25,7 +29,8 @@ import {HttpClientModule} from '@angular/common/http';
     NavbarComponent,
     LoginComponent,
     LogoutComponent,
-    ErrorComponent
+    ErrorComponent,
+    ListAilmentsComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

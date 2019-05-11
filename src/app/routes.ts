@@ -1,8 +1,11 @@
 import {Routes} from '@angular/router';
 import {LoginComponent} from './components/login/login.component';
+<<<<<<< HEAD
 import { ItemComponent } from './components/item/item.component';
 import { AilmentComponent } from './components/ailment/ailment.component';
 import { MealComponent } from './components/meal/meal.component';
+=======
+>>>>>>> 1855d7a4c8d99c346cb66d6d6486b18b2fd8f309
 
 
 
@@ -22,18 +25,6 @@ order of your routes to match the order in which
  */
 
 export const appRoutes: Routes = [
-    {
-        path: 'malady',
-        component: AilmentComponent
-    },
-    {
-        path: 'foodItems',
-        component: ItemComponent
-    },
-    {
-        path: 'recipes',
-        component: MealComponent
-    },
     {
         path: 'login',
         component: LoginComponent
