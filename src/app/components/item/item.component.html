@@ -1,3 +1,17 @@
-<p>
-  item works!
-</p>
+<div class="container">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of itemsArray">
+      <td>{{item}}</td>
+      <td><button (click)="selectMeal(item)" class="btn btn-success">Get Meal Options</button></td>
+    </tr>
+    </tbody>
+
+  </table>
+
+</div>

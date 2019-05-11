@@ -1,11 +1,9 @@
 export class Ailment {
-  id: number;
-  name: string;
-  description: string;
+  problemID: string;
+  hcText: string;
 
-  constructor(id: number, name: string, description: string) {
-    this.id = id;
-    this.name = name;
-    this.description = description;
+  constructor(id: string, hcText: string) {
+    this.problemID = id;
+    this.hcText = hcText;
   }
 }

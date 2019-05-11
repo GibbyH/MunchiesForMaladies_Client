@@ -1,3 +1,20 @@
-<p>
-  list-ailments works!
-</p>
+<div class="container">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let ailment of ailments">
+      <td>{{ailment.problemID}}</td>
+      <td>{{ailment.hcText}}</td>
+      <td><button (click)="selectAilment(ailment.problemID)" class="btn btn-success">Get Food Items</button></td>
+    </tr>
+    </tbody>
+
+  </table>
+
+</div>

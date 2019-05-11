@@ -1,9 +1,9 @@
 export class Meal {
-  id: number;
-  name: string;
+  strMeal: string;
+  strInstructions: string;
 
-  constructor(id: number, name: string) {
-    this.id = id;
-    this.name = name;
+  constructor(strMeal: string, strInstructions: string) {
+    this.strMeal = strMeal;
+    this.strInstructions = strInstructions;
   }
 }
