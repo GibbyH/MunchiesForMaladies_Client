@@ -1,2 +1,2 @@
 export const API_URL = 'http://localhost:8088';
-export const ERS_JPA_API_URL = 'http://localhost:8088/MunchiesForMaladies/';
+export const ERS_JPA_API_URL = 'http://localhost:8088/MunchiesForMaladies_war_exploded';

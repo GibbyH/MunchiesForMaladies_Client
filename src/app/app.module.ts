@@ -13,8 +13,9 @@ import { ErrorComponent } from './components/error/error.component';
 import {FormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {appRoutes} from './routes';
-import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { ListAilmentsComponent } from './components/list-ailments/list-ailments.component';
+import {HttpInterceptorService} from './services/login/http-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { ListAilmentsComponent } from './components/list-ailments/list-ailments.
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ {provide: HTTP_INTERCEPTORS, useClass: HttpInterceptorService, multi: true} ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

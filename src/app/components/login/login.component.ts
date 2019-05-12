@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
-import {LoginService} from '../../services/login.service';
-import {Token} from '../../services/token';
+import {LoginService} from '../../services/login/login.service';
+import BackendUser from '../../models/backend.user';
 
 @Component({
   selector: 'app-login',
@@ -23,9 +23,9 @@ export class LoginComponent implements OnInit {
   login() {
     this.loginService.login({ username: this.username, password: this.password })
       .subscribe(
-        (token: Token) => {
-          localStorage.setItem('authToken', token.idToken);
-          const url = 'welcome/' + this.username;
+        (backendUser: BackendUser) => {
+          localStorage.setItem('loggedUser', JSON.stringify(backendUser));
+          localStorage.setItem('authToken', backendUser.token);
           this.router.navigate(['list-ailments']);
         },
         err => {
