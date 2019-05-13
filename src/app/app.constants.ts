@@ -1,2 +1,2 @@
-export const API_URL = 'http://ec2-54-152-14-252.compute-1.amazonaws.com:8080';
-export const ERS_JPA_API_URL = 'http://ec2-54-152-14-252.compute-1.amazonaws.com:8080/MunchiesForMaladies/';
+export const API_URL = 'http://ec2-54-243-15-28.compute-1.amazonaws.com:8080';
+export const ERS_JPA_API_URL = 'http://ec2-54-243-15-28.compute-1.amazonaws.com:8080/MunchiesForMaladies/';
